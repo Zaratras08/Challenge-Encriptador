@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <script type="text/javascript" src="Script.js"></script>
+        <title>Challenge Encriptador</title>
+    </head>
+    <body>
+        <div class="contenedor">
+            <div class="encabezado">
+                <img class="logo" src="img/logo.png">
+                <h1 class="titulo">Encriptador - Desencriptador Challenge</h1>
+            </div>
+            <div class="panel-izquierdo">
+                <textarea id="input-mensaje" type="text" size="20" placeholder="Ingrese el texto aquí"></textarea>
+            </div>
+            <div class="panel-derecho">
+                <img id="muneco" src="img/Muñeco.png">
+                <h1 id="titulomuneco">Ningun mensaje fue encontrado</h1>
+                <textarea id="textomuneco" name="name" rows="8" cols="80">Ingrese el texto que desees encriptar o desencriptar.</textarea>
+                <button type="button" id="copiar" onclick="copy()">Copiar</button>
+            </div>
+            <div class="botones-cifrar">
+                <p class = "advertencia">&#9888 Solo minusculas y sin acentos</p>
+                <button type="button" id="encriptador" onclick="encriptar()">Encriptar</button>
+                <button type="button" id="desencriptador" onclick="desencriptar()">Desencriptar</button>
+            </div>
+        </div>
+        <footer>
+            <p class="copyright">Josue Crespo Rivera - 2023</p>
+        </footer>
+    </body>
+</html>
